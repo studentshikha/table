@@ -90,7 +90,7 @@ const [dates , setDates] = useState("")
     try {
       const response = await fetch('https://table-isyu.vercel.app/api/book', {
         method: 'POST',
-         mode: 'no-cors', 
+         mode: 'cors', 
         headers: {
           'Content-Type': 'application/json',
         },
