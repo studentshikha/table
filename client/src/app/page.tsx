@@ -102,6 +102,10 @@ const [dates , setDates] = useState("")
           guests,
         }),
       });
+       if (!response.ok) {
+    const errorData = await response.json();
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
       const data = await response.json();
       console.log(data);
       if (data.success === false) {
