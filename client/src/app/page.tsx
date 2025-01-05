@@ -185,10 +185,7 @@ const [dates , setDates] = useState("")
             <div className="contain">
               <p className="detail"><strong>Name:</strong> {reservationDetails.name}</p>
               <p className="detail"><strong>Contact:</strong> {reservationDetails.contact}</p>
-              <p className="detail"><strong>Date:</strong> {reservationDetails.date}
-
-              </p>
-
+              <p className="detail"><strong>Date:</strong> {reservationDetails.date}</p>
               <p className="detail"><strong>Time:</strong> {reservationDetails.time}</p>
               <p className="detail"><strong>Guests:</strong> {reservationDetails.guests}</p>
             </div>
