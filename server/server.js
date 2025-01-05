@@ -59,6 +59,10 @@ app.post('/api/book', (req, res) => {
   app.get('/api/bookings', (req, res) => {
     res.json(bookings);
   });
+
+app.use("/" , (req, res) =>{
+  res.json("hello")
+})
   
 
   app.use((err, req, res, next) => {
