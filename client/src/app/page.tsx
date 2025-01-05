@@ -186,7 +186,7 @@ const [dates , setDates] = useState("")
               <p className="detail"><strong>Name:</strong> {reservationDetails.name}</p>
               <p className="detail"><strong>Contact:</strong> {reservationDetails.contact}</p>
               <p className="detail"><strong>Date:</strong> {reservationDetails.date}
-              <time dateTime={reservationDetails?.date} suppressHydrationWarning>{reservationDetails?.date}</time>
+
               </p>
 
               <p className="detail"><strong>Time:</strong> {reservationDetails.time}</p>
