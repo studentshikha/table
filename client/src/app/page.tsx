@@ -95,6 +95,7 @@ const [dates , setDates] = useState("")
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          id: Date.now(),
           name,
           contact,
           date: format(selectedDate, 'yyyy-MM-dd'),
