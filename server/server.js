@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 
 const corsOptions = {
-  origin: "https://table-front-pink.vercel.app/",
+  origin: "https://table-front-pink.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
   allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
   credentials: true, // Allow cookies or Authorization headers
