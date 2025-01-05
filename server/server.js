@@ -35,6 +35,7 @@ app.post('/api/book', (req, res) => {
       }
 
     const booking = {
+      id: Date.now(),
       name,
       contact,
       date,
