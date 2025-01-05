@@ -47,7 +47,7 @@ const [dates , setDates] = useState("")
   const fetchBookings = async () => {
     const dateStr = format(selectedDate, 'yyyy-MM-dd');
     try {
-      const response = await fetch("https://table-delta-six.vercel.app/api/bookings"  );
+      const response = await fetch("https://table-isyu.vercel.app/bookings"  );
       const data = await response.json();
       const bookedSlotsForDay = data
         .filter((booking: any) => booking.date === dateStr)
@@ -88,7 +88,7 @@ const [dates , setDates] = useState("")
     }
 
     try {
-      const response = await fetch('https://table-delta-six.vercel.app//api/book', {
+      const response = await fetch('https://table-isyu.vercel.app/api/book', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
